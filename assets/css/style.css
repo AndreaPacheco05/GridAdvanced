@@ -1,0 +1,112 @@
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'cabecera cabecera'
+    'menu-principal productos'
+    'pie pie';
+    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 180px auto;
+    grid-template-rows: 0.7fr 5fr 0.1fr;
+    height: 130vh;
+    gap: 1px;
+}
+
+.cabecera{
+    grid-area: cabecera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/header.jpg);
+}
+.cabecera h1{
+    background-color: #62bef8;
+    font-size: 45px;
+    margin: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+.menup{
+    display: flex;
+    flex-direction: column;
+    grid-area: menu-principal;
+    background-color: #FFCE5C;
+
+}
+.menup-head{
+    font-size: 28px;
+    margin-top: 20%;
+    margin-bottom: 3%;
+    margin-left: 9%;
+}
+.category{
+    display: flex;
+    margin-top: 13px;
+    font-size: 18px; 
+    gap: 6px;
+    margin-left: 9%;
+}
+.stock{
+    font-size: 18px; 
+    color: gray;
+}
+
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: productos;
+    background-color: #fcd0af;
+}
+.card{
+    margin: 2%;
+    padding: 2%;
+    background-color: aliceblue;
+}
+.card-img{
+  color: #278ece;
+}
+.card-head{
+    font-size: 20px;
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+}
+.btn{
+    background-color: #2a92d3;
+    padding-left: 32%;
+    padding-right: 32%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+.pie{
+    grid-area: pie;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8cb369;
+}
+.pie-text{
+    background-color: antiquewhite;
+    color: #000000;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+    margin: 0.5%;
+}
+.pie-text a{
+    color: #6d13c2;
+    text-decoration: none;
+}
